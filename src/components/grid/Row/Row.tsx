@@ -1,5 +1,5 @@
-import * as S from './Row.components';
+import styled from "styled-components";
 
-export function Row(props: {}) {
-    return <></>
-}
+export const Row = styled.div`
+    display: flex;
+`;

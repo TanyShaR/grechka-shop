@@ -1,11 +1,10 @@
 import styled from "styled-components";
+import { Col } from "../../grid/Col/Col";
 
-export const Container = styled.div`
+export const Container = styled(Col)`
   padding: 10px;
   border: 1px solid gray;
   border-radius: 5px;
-  display: flex;
-  flex-direction: column;
   gap: 10px;
   `;
   

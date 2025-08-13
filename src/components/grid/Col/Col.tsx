@@ -1,5 +1,6 @@
-import * as S from './Col.components';
+import styled from "styled-components";
 
-export function Col(props: {}) {
-    return <></>
-}
+export const Col = styled.div`
+    display: flex;
+    flex-direction: column;
+`;

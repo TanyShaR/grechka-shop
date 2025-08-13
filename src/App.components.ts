@@ -1,7 +1,7 @@
 import styled from "styled-components";
+import { Col } from "./components/grid/Col/Col";
+import { size } from "./config/size";
 
-export const Container = styled.div`
-display: flex;
-flex-direction: column;
-gap: 20px;
+export const Container = styled(Col)`
+gap: ${size.large}px;
 `;
