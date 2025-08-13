@@ -1,19 +1,19 @@
 import type { ProductInfo } from "../../../model/product";
 import { AddToCartButton } from "../AddToCartButton/AddToCartButton";
-import S from "./Product.module.css";
+import * as C from "./Product.components";
 
 export function Product({ data }: { data: ProductInfo }) {
   return (
-    <div className={S.container}>
-      <h2 className={S.title}>{data.title}</h2>
-      <div className={S.price}>${data.price}</div>
+    <C.Container>
+      <C.Title>{data.title}</C.Title>
+      <C.Price>${data.price}</C.Price>
       {data.inStock ? (
         <AddToCartButton product={data} />
       ) : (
-        <button className={S.button} disabled>
+        <C.NotInStock disabled>
           Not available
-        </button>
+        </C.NotInStock>
       )}
-    </div>
+    </C.Container>
   );
 }
